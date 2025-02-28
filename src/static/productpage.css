@@ -1,0 +1,127 @@
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.product-images {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.main-image-container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.main-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.secondary-images-slider {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 5px 0;
+}
+
+.secondary-images-slider::-webkit-scrollbar {
+    display: none;
+}
+.secondary-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+
+.secondary-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.product-info {
+    flex: 1 1 40%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007acc;
+}
+.product-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+@media screen and (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .product-images {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-image-container {
+        width: 100%;
+    }
+
+    .secondary-images-slider {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .product-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

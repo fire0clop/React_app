@@ -1,0 +1,120 @@
+.product-description-section {
+    width: 100%;
+    background: linear-gradient(135deg, #f7f6f3, #ebe9de);
+    padding: 60px 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.title-block {
+    position: relative;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 1.25em;
+    line-height: 1.8;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+.section-decoration {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    top: -30%;
+    right: 0%;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.divider {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #28460b, #646d5f);
+    margin: 40px 0;
+    border-radius: 50px;
+}
+.advantages .advantage-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.advantage-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.advantage-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.advantage-icon {
+    font-size: 3em;
+    color: #646d5f;
+    margin-bottom: 10px;
+}
+
+.advantage-card h3 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.advantage-card p {
+    font-size: 1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+.use-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.use-list li {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+}
+
+.use-list li::before {
+    content: "✓";
+    color: #49a116;
+    font-size: 1.4em;
+    margin-right: 10px;
+}

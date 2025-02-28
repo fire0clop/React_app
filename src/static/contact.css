@@ -1,0 +1,232 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    background: #f5f4eb;
+}
+
+.contact-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #28460b;
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.contact-button {
+    padding: 15px 30px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #28460b;
+    background: linear-gradient(135deg, #c7ddc5, #e1eddf);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.phone-wrapper {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 120%;
+    left: -35%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+    background: linear-gradient(135deg, #f5f4eb, #cdd1c7, #cadfc8);
+    background-size: 300%;
+    border-radius: 50px;
+    animation: metallic-shine-warm 3s infinite linear;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: calc(60px);
+}
+@keyframes metallic-shine-warm {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 120%;
+    left: -35%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+    background: linear-gradient(135deg, #c7ddc5, #ffffff, #e1eddf);
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    background-size: 400%;
+    animation: menu-shine 5s infinite linear;
+}
+@keyframes menu-shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+.dropdown-icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(135deg, #d8e6d5, #ffffff, #f0f5ef);
+    background-size: 400%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: icon-shine 5s infinite linear;
+}
+@keyframes icon-shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+.dropdown-icon.active {
+    background: linear-gradient(135deg, #b3d6af, #ffffff, #d7e6d0);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+.icon-image {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+.question-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f4eb;
+    border: 1px solid #c7ddc5;
+    border-radius: 10px;
+    font-family: 'Baloo 2', cursive;
+    color: #325b46;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+.question-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #325b46;
+}
+
+.question-form .form-group {
+    margin-bottom: 15px;
+}
+
+.question-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #55876b;
+}
+
+.question-form input,
+.question-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bfd6c2;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #325b46;
+    outline: none;
+    font-family: 'Baloo 2', cursive;
+    box-sizing: border-box;
+}
+
+.question-form input::placeholder,
+.question-form textarea::placeholder {
+    color: #91b095;
+}
+
+.question-form input:focus,
+.question-form textarea:focus {
+    border-color: #77a488;
+}
+
+.question-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.question-form .submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #325b46;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Baloo 2', cursive;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.question-form .submit-button:hover {
+    background: #417a5b;
+    transform: scale(1.02);
+}
+
+.success-message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #55876b;
+}
+
+@media (max-width: 768px) {
+    .question-form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .question-form input,
+    .question-form textarea {
+        font-size: 14px;
+    }
+
+    .question-form .submit-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

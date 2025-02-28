@@ -1,0 +1,66 @@
+.card-init {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    margin: 100px 0;
+}
+.card-init img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    border-radius: 10px 10px 0 0;
+}
+.card-init .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 70%;
+    gap: 10px;
+}
+.card-init .card-content button {
+    padding: 8px 12px;
+    background-color: #646d5f;
+    color: #f3f1e8;
+    border: 1px solid #646d5f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1vw;
+}
+.card-init .card-content button:hover {
+    background-color: #f4f2e9;
+    color: #28460b;
+    border: 1px solid #28460b;
+}
+.card-init .card-content h3 {
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin: 0;
+    text-align: right;
+    flex-grow: 1;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Baloo 2', cursive;
+    letter-spacing: 1px;
+}
+.name_sect{
+    font-family: 'Baloo 2', cursive;
+    font-size: 2vw;
+    font-weight: 600;
+    color: #646d5f;
+    text-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.4),
+            0 3px 6px rgba(0, 0, 0, 0.2),
+            0 4px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    text-align: center;
+
+}
