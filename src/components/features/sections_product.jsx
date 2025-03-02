@@ -1,14 +1,15 @@
-import React from 'react';
-import '../../static/section_product.css';
-import micg from '../../static/image/microgreen_sect.jpg';
-import flow from '../../static/image/flower_sect.jpg';
+import React from 'react'
+import '../../static/section_product.css'
+import micg from '../../static/image/microgreen.jpg'
+import flow from '../../static/image/flower_sect.jpg'
+import salad from '../../static/image/micro_salad.jpg'
 
 
 const SectionsProduct = () => {
     const categories = [
         { name: 'Цветы', image: flow, link: '/categories/flowers' },
         { name: 'Микрозелень', image: micg, link: '/categories/microgreens' },
-        { name: 'Микс салаты', image: '/static/image/salads.jpg', link: '/categories/salads' },
+        { name: 'Микс салаты', image: salad, link: '/categories/salads' },
     ];
 
     return (

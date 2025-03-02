@@ -33,13 +33,17 @@ const ProductPage = () => {
     if (loading) return <p>Загрузка данных о товаре...</p>;
     if (error) return <p>Ошибка загрузки: {error}</p>;
     if (!product) return <p>Товар не найден</p>;
-    const allImages = [product.main_image_url, ...product.secondaryImages];
+    const allImages = product.secondaryImages?.length
+        ? [product.main_image_url, ...product.secondaryImages]
+        : [product.main_image_url];
     const sliderSettings = {
         dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        lazyLoad: "ondemand", // Загружает картинки при необходимости
+        initialSlide: 0, // Убеждаемся, что стартует с первого слайда
         responsive: [
             {
                 breakpoint: 1024,
