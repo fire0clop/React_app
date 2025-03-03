@@ -4,7 +4,7 @@
 Скриншоты главной страницы -
 ![image](https://github.com/user-attachments/assets/d47b5e89-8eeb-4732-86f2-9c8823acbbde)
 ![image](https://github.com/user-attachments/assets/d64e4de9-a5c4-4226-8286-32a75a990c00)
-![image](https://github.com/user-attachments/assets/29d224dc-937a-49bb-b7ae-403022b410d2)
+![image](https://github.com/user-attachments/assets/03d7fe07-3285-4e7f-9400-02ad6f21a701)
 Скриншоты каталога -
 ![image](https://github.com/user-attachments/assets/1b58e44c-d8ae-4ba4-ae64-d5880ec4cb9c)
 ![image](https://github.com/user-attachments/assets/10dc62ed-ad22-4549-a819-690d9e47ff6e)
