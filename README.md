@@ -9,7 +9,7 @@
 ![image](https://github.com/user-attachments/assets/1b58e44c-d8ae-4ba4-ae64-d5880ec4cb9c)
 ![image](https://github.com/user-attachments/assets/10dc62ed-ad22-4549-a819-690d9e47ff6e)
 Страница продукта -
-![image](https://github.com/user-attachments/assets/a3353a16-31da-45e0-8069-307627475971)
+![image](https://github.com/user-attachments/assets/c5df1f9a-446e-447d-bbbc-cbf3986b4f5a)
 Форма контактов -
 ![image](https://github.com/user-attachments/assets/f7e9d381-75aa-4870-9e53-9c7e8b023a1f)
 Административаная форма для создания и редактирования продуктов в магазине -
