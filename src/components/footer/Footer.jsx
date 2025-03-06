@@ -14,7 +14,6 @@ class Footer extends React.Component {
                         <a href="/" className="footer-link">Главная</a>
                         <a href="/product-form" className="footer-link">Создать продукт</a>
                         <a href="/product-list" className="footer-link">Список продуктов</a>
-                        <a href="/faq" className="footer-link">FAQ</a>
                     </div>
                     <div className="footer-contact">
                         <p className="footer-contact-name">Иван Иваныч</p>
