@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Gabriela'; /* Имя шрифта (потом используем его) */
+    src: url('./fonts/Gabriela-Regular.ttf') format('truetype'); /* Путь до файла */
+    font-weight: normal; /* Настройка веса */
+    font-style: normal; /* Стиль шрифта */
+}
+
 .catalog {
     padding: 40px 20px;
     background: #ffffff;
@@ -7,8 +14,11 @@
     gap: 40px;
 }
 .catalog-title {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
+
+
     font-size: 4vw;
+    font-weight: 600;
     color: #28460b;
     text-align: center;
     margin-bottom: 20px;
@@ -56,7 +66,7 @@
     align-items: center;
 }
 .catalog-card-title {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
     font-size: 1.5rem;
     color: #28460b;
     margin: 0 0 10px;
@@ -79,6 +89,7 @@
     display: inline-block;
     transition: background 0.3s ease, transform 0.3s ease;
     margin-top: 15px;
+    font-family: 'Baloo2', 'Gabriela';
 }
 
 .catalog-card-link:hover {

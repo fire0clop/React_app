@@ -26,9 +26,11 @@ const pool = new Pool({
 
 
 router.get("/", async (req, res) => {
+    console.log("Получен запрос на список продуктов"); // Логируем запрос
     try {
         const result = await pool.query("SELECT * FROM product");
         const products = result.rows;
+        console.log("Продукты из базы данных:", products); // Логируем данные из БД
         res.status(200).json(products);
     } catch (error) {
         console.error("Ошибка при получении продуктов:", error.message, error.stack);

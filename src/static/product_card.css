@@ -48,11 +48,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
     letter-spacing: 1px;
 }
 .name_sect{
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
     font-size: 2vw;
     font-weight: 600;
     color: #646d5f;

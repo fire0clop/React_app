@@ -1,3 +1,4 @@
+/* Основные стили секции контактов */
 .contact-section {
     display: flex;
     justify-content: center;
@@ -7,19 +8,23 @@
     background: #f5f4eb;
 }
 
+/* Заголовок */
 .contact-title {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
     font-size: 2.5vw;
     font-weight: bold;
     color: #28460b;
     margin-bottom: 20px;
 }
 
+/* Контейнер кнопок */
 .contact-buttons {
     display: flex;
     gap: 20px;
     position: relative;
 }
+
+/* Общие стили кнопок */
 .contact-button {
     padding: 15px 30px;
     font-family: 'Baloo 2', cursive;
@@ -39,35 +44,13 @@
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* Обертка для кнопки телефона */
 .phone-wrapper {
     position: relative;
 }
 
-.dropdown-menu {
-    position: absolute;
-    top: 120%;
-    left: -35%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 5px;
-    background: linear-gradient(135deg, #f5f4eb, #cdd1c7, #cadfc8);
-    background-size: 300%;
-    border-radius: 50px;
-    animation: metallic-shine-warm 3s infinite linear;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    width: calc(60px);
-}
-@keyframes metallic-shine-warm {
-    0% {
-        background-position: 0%;
-    }
-    100% {
-        background-position: 300%;
-    }
-}
-
+/* Выпадающее меню */
 .dropdown-menu {
     position: absolute;
     top: 120%;
@@ -84,6 +67,7 @@
     background-size: 400%;
     animation: menu-shine 5s infinite linear;
 }
+
 @keyframes menu-shine {
     0% {
         background-position: 0%;
@@ -92,6 +76,8 @@
         background-position: 400%;
     }
 }
+
+/* Иконки в выпадающем меню */
 .dropdown-icon {
     position: relative;
     width: 60px;
@@ -107,6 +93,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: icon-shine 5s infinite linear;
 }
+
 @keyframes icon-shine {
     0% {
         background-position: 0%;
@@ -115,11 +102,13 @@
         background-position: 400%;
     }
 }
+
 .dropdown-icon.active {
     background: linear-gradient(135deg, #b3d6af, #ffffff, #d7e6d0);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
 }
+
 .icon-image {
     width: 75%;
     height: 75%;
@@ -127,7 +116,7 @@
     border-radius: 50%;
 }
 
-
+/* Стили формы обратной связи */
 .question-form {
     max-width: 500px;
     margin: 0 auto;
@@ -135,7 +124,7 @@
     background: #f5f4eb;
     border: 1px solid #c7ddc5;
     border-radius: 10px;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
     color: #325b46;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 5%;
@@ -169,7 +158,7 @@
     background: #ffffff;
     color: #325b46;
     outline: none;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
     box-sizing: border-box;
 }
 
@@ -198,7 +187,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo2', 'Gabriela';
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -215,6 +204,59 @@
 }
 
 @media (max-width: 768px) {
+    /* Адаптация секции контактов */
+    .contact-section {
+        padding: 20px 10px;
+    }
+
+    .contact-title {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Делаем кнопки телефона и почты одинаковыми */
+    .contact-button {
+        font-size: 16px;
+        width: 260px; /* Одинаковая ширина */
+        height: 55px; /* Одинаковая высота */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0;
+    }
+
+    /* Опускаем выпадающее меню ниже */
+    .dropdown-menu {
+        position: absolute;
+        top: 240%; /* Было 65px, опускаем ниже */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 8px;
+        background: linear-gradient(135deg, #c7ddc5, #ffffff, #e1eddf);
+        border-radius: 50px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: auto;
+        z-index: 10;
+    }
+
+    /* Размер иконок в выпадающем меню */
+    .dropdown-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Форма обратной связи */
     .question-form {
         padding: 15px;
         max-width: 100%;

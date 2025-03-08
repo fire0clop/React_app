@@ -15,7 +15,7 @@ const ProductPage = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/products/${id}`);
+                const response = await fetch(`http://192.168.1.12:5000/api/products/${id}`);
                 if (!response.ok) throw new Error("Не удалось загрузить данные о товаре");
                 const data = await response.json();
                 setProduct(data);

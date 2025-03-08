@@ -20,7 +20,7 @@ const ProductList = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/products");
+                const response = await fetch("http://192.168.1.12:5000/api/products");
                 if (!response.ok) {
                     console.error("Ошибка при загрузке продуктов");
                     return;
@@ -41,7 +41,7 @@ const ProductList = () => {
         if (!confirmDelete) return;
 
         try {
-            const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+            const response = await fetch(`http://192.168.1.12:5000/api/products/${id}`, {
                 method: "DELETE",
             });
 

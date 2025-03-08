@@ -99,8 +99,8 @@ const ProductForm = ({ onProductSaved }) => {
         });
 
         const url = initialProduct
-            ? `http://localhost:5000/api/products/${initialProduct.id}`
-            : "http://localhost:5000/api/products";
+            ? `http://192.168.1.12:5000/api/products/${initialProduct.id}` // Ваш IP-адрес
+            : "http://192.168.1.12:5000/api/products";
         const method = initialProduct ? "PUT" : "POST";
 
         try {
